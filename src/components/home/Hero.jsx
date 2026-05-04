@@ -44,7 +44,7 @@ const Hero = () => {
       <div className="relative group">
         <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-gray-800">
-          <img src="https://i.ibb.co.com/x8hWx3CC/profesionl.png" alt="Profile" className="w-full h-full object-cover" />
+          <img src="https://i.ibb.co.com/VYWsqrpS/beast.png" alt="Profile" className="w-full h-full object-cover" />
         </div>
       </div>
     </section>
