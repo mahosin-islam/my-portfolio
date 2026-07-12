@@ -14,7 +14,7 @@ const Hero = () => {
         </h1>
         <p className="text-gray-400 text-lg max-w-xl">
           I build exceptional digital experiences that are fast, accessible, and visually stunning. Let's transform
-          your ideas into reality.|
+          your ideas into reality
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
