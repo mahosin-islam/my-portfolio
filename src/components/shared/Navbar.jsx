@@ -23,14 +23,14 @@ const Navbar = () => {
           <div className="text-xl font-bold text-blue-600 dark:text-blue-500">
             PORTFOLIO.
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex items-baseline space-x-8">
               {menuItems.map((item) => (
-                <Link 
-                  key={item.name} 
-                  href={item.href} 
+                <Link
+                  key={item.name}
+                  href={item.href}
                   className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition"
                 >
                   {item.name}
@@ -38,25 +38,12 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* Dark Mode Toggle Button */}
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-yellow-400 transition-all border border-gray-200 dark:border-gray-700"
-              aria-label="Toggle Theme"
-            >
-              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+
           </div>
 
           {/* Mobile Right Side (Toggle + Menu) */}
           <div className="md:hidden flex items-center gap-4">
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-yellow-400 border border-gray-200 dark:border-gray-700"
-            >
-              {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
-            
+
             <button onClick={() => setIsOpen(!isOpen)} className="p-2 text-gray-700 dark:text-gray-300">
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -68,10 +55,10 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-[#0f172a] border-b border-gray-200 dark:border-gray-800 px-2 pt-2 pb-3 space-y-1 shadow-lg">
           {menuItems.map((item) => (
-            <Link 
-              key={item.name} 
-              href={item.href} 
-              onClick={() => setIsOpen(false)} 
+            <Link
+              key={item.name}
+              href={item.href}
+              onClick={() => setIsOpen(false)}
               className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md font-medium"
             >
               {item.name}

@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom copyright section */}
-        <div className="mt-14 pt-8 border-t border-slate-100 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+        <div className="mt-4 pt-8 border-t border-slate-100 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <p className="text-slate-500 dark:text-gray-500 text-sm font-medium tracking-wide">
             © {currentYear} <span className="text-slate-900 dark:text-gray-300 font-bold">Siam Khan</span>. All Rights Reserved.
           </p>

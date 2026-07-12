@@ -25,7 +25,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 px-6 bg-background transition-colors duration-500 overflow-hidden">
+    <section id="skills" className="py-14 px-6 bg-background transition-colors duration-500 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* Title Section */}
@@ -38,7 +38,7 @@ const Skills = () => {
             My <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">Skills</span>
           </motion.h2>
           <p className="text-muted-foreground max-w-2xl mx-auto italic">
-            গত এক বছরে আমি যে সকল টেকনোলজিতে দক্ষতা অর্জন করেছি এবং নিয়মিত ব্যবহার করি।
+           In the past year, I have gained proficiency in the following technologies and regularly use them.
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mt-6 rounded-full"></div>
         </div>

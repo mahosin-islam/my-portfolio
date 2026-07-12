@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen  flex flex-col md:flex-row items-center justify-center pt-10 md:pt-0 px-2 gap-10">
+    <section className=" min-h-[calc(100vh-60px)] flex flex-col md:flex-row items-center justify-center pt-10 md:pt-0 px-2 gap-10">
       <div className="md:w-3/5 text-center md:text-left space-y-6">
         <h2 className="text-blue-400 font-mono tracking-widest uppercase text-sm">
           // Full Stack Developer
@@ -23,20 +22,16 @@ const Hero = () => {
           <button className="bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-3 rounded-full font-bold hover:scale-105 transition flex items-center gap-2 text-white">
             Hire Me
           </button></Link>
-        
 
 <a 
-    href="/Fullstac.pdf" 
+    href="/Full Stack Developer.pdf" 
     download="YourName_Resume.pdf"
     className="no-underline"
   >
-    <button className="border border-gray-700 px-8 py-3 rounded-full font-bold hover:bg-gray-800 transition flex items-center gap-2 text-foreground dark:text-white">
+    <button className="border border-gray-700 px-8 py-3 rounded-full font-bold hover:bg-gray-400 transition flex items-center gap-2 text-foreground dark:text-white">
       <HiDownload size={20} /> Resume
     </button>
   </a>
-
-
-
         </div>
       </div>
 

@@ -58,11 +58,11 @@ const Projects = () => {
           Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Projects</span>
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto italic">
-          আমার তৈরি করা সেরা কিছু প্রজেক্ট যা আমার স্কিল এবং লজিক প্রকাশ করে।
+          Some of the best projects I've created that showcase my skills and logic
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
