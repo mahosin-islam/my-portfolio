@@ -89,7 +89,7 @@ const Footer = () => {
             © {currentYear} <span className="text-slate-900 dark:text-gray-300 font-bold">Siam Khan</span>. All Rights Reserved.
           </p>
           <p className="text-slate-400 dark:text-gray-600 text-xs">
-            Built with comonsta<span className="text-purple-500 font-bold">Next.js</span> & <span className="text-blue-500 font-bold">Tailwind CSS</span>
+            Built with <span className="text-purple-500 font-bold">Next.js</span> & <span className="text-blue-500 font-bold">Tailwind CSS</span>
           </p>
         </div>
       </div>
