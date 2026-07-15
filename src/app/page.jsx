@@ -1,26 +1,25 @@
-import About from "@/components/home/About";
-import Contact from "@/components/home/Contact";
-import Footer from "@/components/home/Footer";
-import Hero from "@/components/home/Hero";
-import Projects from "@/components/home/Projects";
-import Skills from "@/components/home/Skills";
-
-import Navbar from "@/components/shared/Navbar";
-
-
+"use client";
+import Hero from "./components/Hero";
+import Stats from "./components/Stats";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen bg-[#0B1120]">
       <Navbar />
       <Hero />
+      <Stats />
       <About />
-    <Skills/>
+      <Skills />
       <Projects />
+      <Services />
       <Contact />
-      {/* এরপর নিচের সেকশনগুলো একে একে আসবে */}
-      <div className="h-20 flex items-center justify-center text-gray-500 italic">
-       <Footer></Footer>
-      </div>
+      <Footer />
     </main>
   );
 }
