@@ -16,16 +16,23 @@ export const stats = [
 ];
 
 export const skills = {
-  title: "Tools I work with daily",
-  description: "I've been working on a variety of projects, from full-stack web development to data science and machine learning.",
-  tools: [
-    "React", "Next.js", "Node.js", "Express.js",
-    "MongoDB", "Tailwind CSS", "JavaScript", "TypeScript",
-    "Git", "GitHub", "REST API", "Framer Motion",
-    "HTML", "CSS", "Figma", "Vercel"
+  title: "Skills & Technologies",
+  description: "I've been working on a variety of projects, from full-stack web development to building scalable user interfaces.",
+  categories: [
+    {
+      name: "Frontend Architecture",
+      tools: [ "JavaScript", "TypeScript","React", "Next.js", "Tailwind CSS", "Framer Motion", "HTML", "CSS"]
+    },
+    {
+      name: "Backend & Data",
+      tools: ["Node.js", "Express.js", "MongoDB", "REST API", "Redux", "TanStack Query", "Pusher (WebSockets)"]
+    },
+    {
+      name: "Auth, Payments & Tools",
+      tools: ["JWT", "Firebase Auth", "BetterAuth", "Stripe", "Git", "GitHub", "Figma", "Vercel", "Netlify", "CI/CD"]
+    }
   ]
 };
-
 // Apnar real project data
 export const projectsData = [
   {

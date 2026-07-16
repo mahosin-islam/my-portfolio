@@ -67,21 +67,21 @@ export default function About() {
     <section id="about" className="min-h-screen bg-[#0B1120] py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* হেডার */}
-        <motion.div
+             <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
           <span className="text-blue-400 text-xs font-medium tracking-[0.2em] uppercase">
-            ABOUT & JOURNEY
+            ABOUT ME
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-white mt-2">
-            Who I am, <span className="text-blue-500">where I'm headed</span>
+            Who <span className="text-blue-500">I Am</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mt-4"></div>
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-sm">
-            A self-taught developer and Bachelor student, blending academic foundations with hands-on project work — always shipping, always learning.
+            A self-taught developer and Bachelor student — passionate about building web applications.
           </p>
         </motion.div>
 
