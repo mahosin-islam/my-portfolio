@@ -82,7 +82,7 @@ export default function Hero() {
               {/* Profile Image */}
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-blue-500/50 shadow-2xl shadow-blue-600/20">
                 <img
-                  src="https://i.ibb.co.com/VYWsqrpS/beast.png"
+                  src="https://res.cloudinary.com/rob9jlkw/image/upload/v1785607260/beast_vejtyk.png"
                   alt={personalInfo.name}
                   className="w-full h-full object-cover"
                 />
