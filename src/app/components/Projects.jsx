@@ -41,7 +41,7 @@ export default function Projects() {
                 className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden hover:border-blue-600/50 transition-all duration-300 group"
               >
                 {/* Project Image */}
-                <div className="relative h-56 overflow-hidden bg-gray-800">
+                <div className="relative h-80 overflow-hidden bg-gray-800">
                   <img
                     src={project.image}
                     alt={project.name}

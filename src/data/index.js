@@ -71,14 +71,28 @@ export const projectsData = [
   {
     id: "4",
     name: "Quranul Hakim",
-    image: "https://i.ibb.co.com/W4nkQpkr/Screenshot-2026-05-04-102901.png",
+     image: "https://res.cloudinary.com/rob9jlkw/image/upload/v1786633182/Screenshot_2026-08-11_150300_bl6o5g.png",
+   
     stack: ["Next.js", "TypeScript", "Tailwind CSS v4.0", "Lucide React"],
     description: "A modern and professional Quran application that allows users to read all 114 surahs and listen to audio for each verse. It includes customizable font settings, global search, and dark mode support, making the Quran reading experience smoother and more user-friendly.",
     liveLink: "https://quran-app-snowy-two.vercel.app/",
     githubLink: "https://github.com/mahosin-islam/quran-app",
     challenges: "Loading data of 114 surahs and thousands of verses while maintaining performance was the main challenge. To solve this, a Load More system and Static Site Generation (SSG) were used to optimize page loading speed. Also, LocalStorage synchronization was implemented to persist user settings like font size and family after refresh.",
     futurePlan: "Adding offline Quran reading support (PWA) and multiple reciter audio selection options."
-  }
+  },
+  {
+  id: "5", 
+  name: "JobTrack",
+   image: "https://res.cloudinary.com/rob9jlkw/image/upload/v1786640209/Screenshot_2026-08-13_205300_uanynd.png",
+  
+  stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide React"],
+  description: "A modern job application tracker that helps job seekers manage, organize, and monitor their job application process in one place. It features status updates, interview timeline management, application analytics, and notes tracking to streamline the career hunt.",
+  liveLink: "https://jobtrackio.vercel.app/",
+  githubLink: "https://github.com/mahosin-islam/CareerTrack-Frontend",
+  challenges: "Managing real-time state updates for multiple application statuses (Applied, Interview, Offer, Rejected) while maintaining seamless animations during state changes was a key challenge. Framer Motion was integrated with Next.js state management to build smooth dynamic UI transitions without compromising performance.",
+  futurePlan: "Adding AI-powered resume review features, email reminders for upcoming interviews, and automated job application tracking via browser extension integration."
+}
+
 ];
 
 // Services data (updated with real project info)
