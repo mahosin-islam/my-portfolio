@@ -64,7 +64,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="min-h-screen bg-[#0B1120] py-20">
+    <section id="about" className=" bg-[#0B1120] py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* হেডার */}
              <motion.div
