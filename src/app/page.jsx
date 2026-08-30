@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 export default function Home() {
   return (
-    <main className="border-amber-500 border-2 ">
+    <main className="">
       <Navbar />
       <Hero />
       <Stats />
