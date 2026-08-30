@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SplashProvider from "./components/SplashProvider";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 
 const geistSans = Geist({
@@ -26,10 +27,9 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0B1120]`}>
         <SplashProvider>
-
           {children}
+          <WhatsAppButton /> 
         </SplashProvider>
-
       </body>
     </html>
   );
