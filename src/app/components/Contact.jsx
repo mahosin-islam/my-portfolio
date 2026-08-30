@@ -127,7 +127,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-800/80 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-200"
-                  placeholder="john@example.com"
+                  placeholder="mahosin.dev@gmail.com"
                 />
               </motion.div>
               
