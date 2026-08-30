@@ -1,13 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiDownload, FiArrowRight } from "react-icons/fi";
+import { FiEye, FiDownload, FiArrowRight } from "react-icons/fi";
 import { personalInfo } from "@/data";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
+  const resumeDriveLink = "https://drive.google.com/file/d/1oThCz6pRlrwkCZ2qcUCwocIflxAx5-uC/view?usp=sharing";
+
   return (
-    <section id="home" className=" flex items-center pt-20 pb-12 overflow-hidden">
+    <section id="home" className="flex items-center pt-20 pb-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
@@ -27,7 +29,7 @@ export default function Hero() {
             {/* Typewriter Effect Container */}
             <div className="text-xl sm:text-2xl font-medium mb-6 text-blue-400 h-[40px] flex items-center">
               <span>I am a&nbsp;</span>
-              <span className="text-white  pb-1">
+              <span className="text-white pb-1">
                 <Typewriter
                   words={[
                     "MERN Stack Developer",
@@ -35,7 +37,7 @@ export default function Hero() {
                     "Next.js Developer",
                     "Full-Stack Enthusiast"
                   ]}
-                  loop={0} // 0 দিলে এটি আনলিমিটেড বার চলতে থাকবে
+                  loop={0}
                   cursor
                   cursorStyle="|"
                   typeSpeed={70}
@@ -49,15 +51,28 @@ export default function Hero() {
               {personalInfo.tagline}
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+              {/* View Resume Button (Opens Drive in New Tab) */}
+              <a
+                href={resumeDriveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all duration-200 shadow-lg shadow-blue-600/30"
+              >
+                <FiEye size={18} />
+                View Resume
+              </a>
+
+              {/* Optional Quick Download Icon Button */}
               <a
                 href="/MERN Developer.pdf"
                 download="Mahosin_Islam_Resume.pdf"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all duration-200 shadow-lg shadow-blue-600/30"
+                className="inline-flex items-center justify-center p-3 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white rounded-lg transition-all duration-200 border border-gray-700/60"
+                title="Download CV"
               >
                 <FiDownload size={18} />
-                Download CV
               </a>
+
               <a
                 href="#projects"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-medium transition-all duration-200"
