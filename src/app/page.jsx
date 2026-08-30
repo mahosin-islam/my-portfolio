@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0B1120]">
+    <main className="border-amber-500 border-2 ">
       <Navbar />
       <Hero />
       <Stats />

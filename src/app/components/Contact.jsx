@@ -22,7 +22,6 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
@@ -46,12 +45,14 @@ export default function Contact() {
   ];
 
   return (
-    <AnimatedSection id="contact" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    /* overflow-x-clip / overflow-hidden যোগ করা হয়েছে যেন framer-motion এনিমেশনের x-offset ওভারফ্লো না ঘটায় */
+    <AnimatedSection id="contact" className="py-20 overflow-x-clip">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center mb-12">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="text-3xl sm:text-4xl font-bold text-white mb-3"
           >
@@ -60,12 +61,14 @@ export default function Contact() {
           <motion.div 
             initial={{ width: 0 }}
             whileInView={{ width: 80 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="h-1 bg-blue-600 mx-auto rounded-full mb-4"
           ></motion.div>
           <motion.p 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-gray-400 max-w-2xl mx-auto"
           >
@@ -73,17 +76,19 @@ export default function Contact() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 w-full">
           {/* Contact Form - 3 columns */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-3 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 md:p-8"
+            className="lg:col-span-3 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 md:p-8 w-full overflow-hidden"
           >
             <motion.h3 
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               className="text-2xl font-semibold text-white mb-6"
             >
@@ -92,8 +97,9 @@ export default function Contact() {
             
             <form onSubmit={handleSubmit} className="space-y-5">
               <motion.div 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
               >
                 <label htmlFor="name" className="block text-gray-300 text-sm font-medium mb-1.5">
@@ -112,8 +118,9 @@ export default function Contact() {
               </motion.div>
               
               <motion.div 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
                 <label htmlFor="email" className="block text-gray-300 text-sm font-medium mb-1.5">
@@ -132,8 +139,9 @@ export default function Contact() {
               </motion.div>
               
               <motion.div 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
               >
                 <label htmlFor="message" className="block text-gray-300 text-sm font-medium mb-1.5">
@@ -152,8 +160,9 @@ export default function Contact() {
               </motion.div>
               
               <motion.button
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ delay: 0.6 }}
                 type="submit"
                 disabled={isSubmitting}
@@ -184,10 +193,11 @@ export default function Contact() {
 
           {/* Social & Info - 2 columns */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="lg:col-span-2 space-y-6"
+            className="lg:col-span-2 space-y-6 min-w-0 w-full overflow-hidden"
           >
             {/* Contact Details */}
             <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-6">
@@ -200,23 +210,24 @@ export default function Contact() {
                   return (
                     <motion.div
                       key={index}
-                      initial={{ opacity: 0, x: 20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
                       transition={{ delay: 0.3 + index * 0.1 }}
-                      className="flex items-center gap-3 group"
+                      className="flex items-center gap-3 group min-w-0"
                     >
-                      <div className="p-2.5 bg-blue-600/20 rounded-xl group-hover:bg-blue-600/30 transition-all duration-300">
+                      <div className="p-2.5 bg-blue-600/20 rounded-xl group-hover:bg-blue-600/30 transition-all duration-300 shrink-0">
                         <Icon className="text-blue-400" size={18} />
                       </div>
                       {detail.link ? (
                         <a 
                           href={detail.link} 
-                          className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
+                          className="text-gray-300 hover:text-white transition-colors duration-200 text-sm break-all min-w-0"
                         >
                           {detail.text} 
                         </a>
                       ) : (
-                        <span className="text-gray-300 text-sm">{detail.text}</span>
+                        <span className="text-gray-300 text-sm break-all min-w-0">{detail.text}</span>
                       )}
                     </motion.div>
                   );
@@ -245,6 +256,7 @@ export default function Contact() {
                       whileTap={{ scale: 0.95 }}
                       initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
                       transition={{ delay: 0.4 + index * 0.1 }}
                       className={`p-3.5 bg-gray-800 hover:bg-gray-700 rounded-xl text-gray-400 ${social.color} transition-all duration-200 shadow-lg hover:shadow-blue-600/20`}
                       aria-label={social.label}
