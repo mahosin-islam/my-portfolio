@@ -65,7 +65,7 @@ export default function Hero() {
 
               {/* Optional Quick Download Icon Button */}
               <a
-                href="/MERN Developer.pdf"
+                href="/Full Stack Developer.pdf"
                 download="Mahosin_Islam_Resume.pdf"
                 className="inline-flex items-center justify-center p-3 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white rounded-lg transition-all duration-200 border border-gray-700/60"
                 title="Download CV"

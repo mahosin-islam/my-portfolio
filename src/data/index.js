@@ -25,7 +25,7 @@ export const skills = {
     },
     {
       name: "Backend & Data",
-      tools: ["Node.js", "Express.js", "MongoDB", "REST API", "Redux", "TanStack Query", "Pusher (WebSockets)"]
+      tools: ["Node.js","PostgreSQL","Prisma", "Express.js", "MongoDB", "REST API", "Redux", "TanStack Query"]
     },
     {
       name: "Auth, Payments & Tools",
@@ -35,8 +35,19 @@ export const skills = {
 };
 // Apnar real project data
 export const projectsData = [
+{
+  id: "1",
+  name: "LMS Platform",
+  image: "https://i.ibb.co.com/Zz2rs3wp/Screenshot-2026-09-22-224746.png", // এখানে তোমার ল্যান্ডিং পেইজের আসল স্ক্রিনশট লিংক বসিয়ে দেবে
+  stack: ["Next.js 15", "React 19", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS v4", "TanStack Query", "shadcn/ui"],
+  description: "A full-stack Learning Management System (LMS) designed for seamless online English learning. It features secure role-based portals for Learners and Admins, an interactive searchable course catalog, live/self-paced course models, automated certificate generation, and an embedded Gemini-powered AI learning assistant named 'Mentora'.",
+  liveLink: "https://lmsplatform-nu.vercel.app/",
+  githubLink: "https://github.com/mahosin-islam/prisma",
+  challenges: "Managing real-time progress state updates across complex nested course modules (quizzes, assignments, videos) while ensuring secure payment verification (bKash/Nagad) was a key challenge. To overcome this, Prisma transactions were utilized for atomic state updates alongside TanStack Query for optimistic UI caching. Additionally, streaming responses from the Gemini API were integrated into the 'Mentora' AI assistant without blocking the main render thread.",
+  futurePlan: "Implementing WebRTC-based interactive live classroom sessions, automated peer-to-peer assignment review pipelines, and offline progress synchronization for mobile web users."
+},
   {
-    id: "1",
+    id: "2",
     name: "ShifaCare",
     image: "https://i.ibb.co.com/4wcQK6zw/Screenshot-2026-06-23-160852.png",
     stack: ["Next.js", "TypeScript", "MongoDB", "Pusher API", "BetterAuth", "TanStack Query", "Tailwind CSS"],
@@ -47,7 +58,7 @@ export const projectsData = [
     futurePlan: "Integrating video calling feature (WebRTC) for remote tele-medicine consultations and automated prescription generation systems."
   },
   {
-    id: "2",
+    id: "3",
     name: "MERN E-Commerce",
     image: "https://i.ibb.co.com/RGszFPBD/Screenshot-2026-04-29-215537.png",
     stack: ["Next.js", "Tailwind CSS", "Framer Motion", "MongoDB", "Firebase Auth", "Role Base Access"],
@@ -58,7 +69,7 @@ export const projectsData = [
     futurePlan: "In the future, there is a plan to add a user dashboard to this project."
   },
   {
-    id: "3",
+    id: "4",
     name: "MERN Restaurant",
     image: "https://i.ibb.co.com/TqK3g3YV/Screenshot-2026-04-29-220416.png",
     stack: ["MongoDB", "Node.js", "Express", "React"],
@@ -69,7 +80,7 @@ export const projectsData = [
     futurePlan: "Adding a multi-vendor system."
   },
   {
-    id: "4",
+    id: "5",
     name: "Quranul Hakim",
      image: "https://res.cloudinary.com/rob9jlkw/image/upload/v1786633182/Screenshot_2026-08-11_150300_bl6o5g.png",
    
@@ -81,7 +92,7 @@ export const projectsData = [
     futurePlan: "Adding offline Quran reading support (PWA) and multiple reciter audio selection options."
   },
   {
-  id: "5", 
+  id: "6", 
   name: "JobTrack",
    image: "https://res.cloudinary.com/rob9jlkw/image/upload/v1786640209/Screenshot_2026-08-13_205300_uanynd.png",
   
